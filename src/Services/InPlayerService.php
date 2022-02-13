@@ -20,7 +20,7 @@ class InPlayerService implements ServiceContract
         public readonly string $client_id,
         public readonly string $client_secret,
         public readonly string $merchant_uuid,
-        public readonly string $merchant_password,
+        public readonly null|string $merchant_password = null,
     ) {}
 
     public function makeRequest(): PendingRequest

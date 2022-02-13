@@ -10,7 +10,7 @@ return [
         'client_id' => env(key: 'INPLAYER_CLIENT_ID'),
         'client_secret' => env(key: 'INPLAYER_CLIENT_SECRET'),
         'merchant_uuid' => env(key: 'INPLAYER_MERCHANT_UUID'),
-        'merchant_password' => env(key: 'INPLAYER_MERCHANT_PASSWORD'),
+        'merchant_password' => env(key: 'INPLAYER_MERCHANT_PASSWORD', default: null),
         // 'access_durations' => [
         //     '6 hours' => 169, 
         //     '12 hours' => 170, 
