@@ -1,0 +1,54 @@
+{
+    "name": "social-piranha/inplayer-support",
+    "description": "Laravel support of InPlayer API",
+    "keywords": [
+        "social piranha",
+        "inplayer-support"
+    ],
+    "homepage": "https://github.com/joeycoonce/inplayer-support",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Joey Coonce",
+            "email": "joeycoonce@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/support": "^9.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.0",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocialPiranha\\InPlayerSupport\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SocialPiranha\\InPlayerSupport\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SocialPiranha\\InPlayerSupport\\InPlayerServiceProvider"
+            ],
+            "aliases": {
+                "InPlayer": "SocialPiranha\\InPlayerSupport\\InPlayerFacade"
+            }
+        }
+    }
+}
