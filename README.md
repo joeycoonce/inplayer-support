@@ -14,6 +14,30 @@ You can install the package via composer:
 composer require social-piranha/inplayer-support
 ```
 
+In .env, define InPlayer credentials:
+
+```env
+INPLAYER_CLIENT_ID=
+INPLAYER_CLIENT_SECRET=
+INPLAYER_MERCHANT_UUID=
+```
+
+Optionally, define
+
+```env
+INPLAYER_MERCHANT_PASSWORD
+```
+
+to support permanent deletion of users.
+
+Optionally, define
+
+```env
+INPLAYER_ENV=staging
+```
+
+to use the staging endpoint
+
 ## Usage
 
 ```php
